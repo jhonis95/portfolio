@@ -1,17 +1,17 @@
 import React from 'react'
 import './style/navBar.css'
-class navBar extends React.Component{
+class NavBar extends React.Component{
     render(){
         return(
             <div className="navbar">
                 <img src="" alt="icone"/>
-                <nav>
-                    <a href="Home"></a>
-                    <a href="Contacs"></a>
-                    <a href="About me"></a>
+                <nav className="navbtn">
+                    <a href="Home">home</a>
+                    <a href="Contacs">contacs</a>
+                    <a href="About me">about me</a>
                 </nav>
             </div>
         );
     }
 }
-export default navBar;
+export default NavBar;
