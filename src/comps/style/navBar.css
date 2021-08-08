@@ -10,7 +10,7 @@
 .navbtn{
     color: white;
     margin: 0;
-    left: -1;
+    width: 100%;
     display: flex;
     align-content: space-between;
 }
