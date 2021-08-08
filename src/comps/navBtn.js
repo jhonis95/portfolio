@@ -3,7 +3,7 @@ import './style/navBtn.css'
 class NavBtn extends React.Component{
     render(){
         return(
-            <div className="navbtn">
+            <div className="navCompBtn">
                 <a href={this.props.ref}>
                     {this.props.namebtn}
                 </a>

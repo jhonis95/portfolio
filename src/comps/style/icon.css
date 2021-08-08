@@ -1,0 +1,7 @@
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+.icon p{
+    color: white;
+}
