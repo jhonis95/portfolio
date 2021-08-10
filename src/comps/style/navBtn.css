@@ -1,7 +1,8 @@
 .navCompBtn{
-    border-radius: 10%;
-    border: white 1px solid;
-    background-color: red;
+    border-radius: 30%;
+    border:rgb(0, 90, 207) 1px solid;
+    background-color: white;
+    padding: 5px;
 }
 .navCompBtn a{
     color:black;

@@ -1,6 +1,5 @@
 .navbar{
     background-color: black;
-    border: rgb(0, 90, 207) 5px solid;
     width: 100%;
     height: 5vh;
     display: flex;
@@ -8,11 +7,10 @@
     align-items: center;
 }
 .navBtn{
-    background-color: blue;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }

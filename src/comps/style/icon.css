@@ -1,7 +1,25 @@
 .icon{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 30vw;
 }
 .icon p{
     color: white;
+}
+.iconText{
+    display: flex;
+    flex-direction: column;
+}
+#iconImg{
+    height: 4vh;
+    margin-right: 1vw;
+}
+#name{
+    font-size: x-small;
+    margin: 0%;
+}
+#subtext{
+    font-size: xx-small;
+    margin: 0%;
 }
