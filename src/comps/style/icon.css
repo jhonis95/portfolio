@@ -13,7 +13,10 @@
 }
 #iconImg{
     height: 4vh;
-    margin-right: 1vw;
+    margin-right: 0.3vw;
+    margin-left: 0.3vw;
+    border: white 2px solid;
+    border-radius: 50%;
 }
 #name{
     font-size: x-small;
