@@ -1,6 +1,6 @@
 .navCompBtn{
     border-radius: 15%;
-    padding: 5px;
+    padding: 0.25rem 0.5rem;
     transition: all ease 500ms;
 }
 .navCompBtn a{
