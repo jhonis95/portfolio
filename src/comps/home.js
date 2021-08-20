@@ -17,7 +17,7 @@ class Home extends React.Component{
         }));
         
         if(this.state.isToggleOnBtnResume===true){
-            
+            //make the overload page to  show the resume
         }
     }
     handerClickPortifolio(){
@@ -26,15 +26,19 @@ class Home extends React.Component{
             isToggleOnBtnPortfolio:!prevState.isToggleOnBtnPortfolio
         }));
         if(this.state.isToggleOnBtnPortfolio===true){
-
+            //make the overload page to  show the projects
         }
     }
     render(){//resolve the warning 
         return(
-            <div>
+            <div className="home">
                 <img src={this.props.image} alt="backGroundImg"/>
-                <button onClick={this.handerClickResume}>Resume</button>
-                <button onClick={this.handerClickPortifolio}>Portfolio</button>
+                <h1>hi my name is Jonantan</h1>
+                <p>wellcome to my Portfolio</p>
+                <div className="btnContainer">
+                    <button id="resumeBtn" onClick={this.handerClickResume}>Resume</button>
+                    <button id="portfolioBtn" onClick={this.handerClickPortifolio}>Portfolio</button>
+                </div>
             </div>
         );
     }

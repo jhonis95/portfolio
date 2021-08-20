@@ -1,0 +1,23 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.btnContainer{
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+.home button{
+    padding: 1rem 1.5rem;
+    transition: all ease 0.3s;
+    border-radius: 10%;
+    font-size: small;
+    
+}
+.home button:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+    cursor:pointer;
+}
