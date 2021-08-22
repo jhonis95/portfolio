@@ -1,4 +1,5 @@
 import React from 'react'
+import Modal from 'react-modal'
 import './style/home.css'
 
 class Home extends React.Component{
@@ -6,27 +7,23 @@ class Home extends React.Component{
         super(props);
         this.state={
             isToggleOnBtnResume:false,
-            isToggleOnBtnPortfolio:false
+            isToggleOnBtnPortfolio:false,
+            modalState:false
         }
         this.handerClickResume=this.handerClickResume.bind(this);
         this.handerClickPortifolio=this.handerClickPortifolio.bind(this);
     }
-    handerClickResume(){//might need to change 
+    handerClickResume(){
         this.setState(prevState=>({
-            isToggleOnBtnResume:!prevState.isToggleOnBtnResume
+            isToggleOnBtnResume:!prevState.isToggleOnBtnResume,
+            modalState:!prevState.modalState //on click of resume props isOpen of modal will be true 
         }));
-        
-        if(this.state.isToggleOnBtnResume===true){
-            //make the overload page to  show the resume
-        }
     }
     handerClickPortifolio(){
-        
         this.setState(prevState=>({
             isToggleOnBtnPortfolio:!prevState.isToggleOnBtnPortfolio
         }));
         if(this.state.isToggleOnBtnPortfolio===true){
-            //make the overload page to  show the projects
         }
     }
     render(){//resolve the warning 
@@ -39,6 +36,14 @@ class Home extends React.Component{
                     <button id="resumeBtn" onClick={this.handerClickResume}>Resume</button>
                     <button id="portfolioBtn" onClick={this.handerClickPortifolio}>Portfolio</button>
                 </div>
+                <Modal isOpen={this.state.modalState} onRequestClose={this.handerClickResume}>
+                    <div className="closeBtn">
+                        <button onClick={this.handerClickResume}>close modal</button>
+                    </div>
+                    <h2>My Resume</h2>
+                    <img src="" alt=""/>
+                    <button>download</button>
+                </Modal>
             </div>
         );
     }

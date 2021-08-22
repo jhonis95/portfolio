@@ -10,14 +10,17 @@
     justify-content: space-around;
 }
 .home button{
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     transition: all ease 0.3s;
     border-radius: 10%;
     font-size: small;
-    
+    background-color: blue;
+    color: white;
 }
 .home button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0.8;
     cursor:pointer;
+    background-color: orange;
+    color: black;
 }
