@@ -1,6 +1,7 @@
 import React from 'react'
 import Modal from 'react-modal'
 import './style/home.css'
+Modal.setAppElement('#root')//seting the app element
 
 class Home extends React.Component{
     constructor(props){
@@ -30,13 +31,20 @@ class Home extends React.Component{
         return(
             <div className="home">
                 <img src={this.props.image} alt="backGroundImg"/>
-                <h1>hi my name is Jonantan</h1>
-                <p>wellcome to my Portfolio</p>
+                <h1>Hi my name is Jonantan</h1>
+                <p>welcome to my Portfolio</p>
                 <div className="btnContainer">
                     <button id="resumeBtn" onClick={this.handerClickResume}>Resume</button>
                     <button id="portfolioBtn" onClick={this.handerClickPortifolio}>Portfolio</button>
                 </div>
-                <Modal isOpen={this.state.modalState} onRequestClose={this.handerClickResume}>
+                <Modal isOpen={this.state.modalState} onRequestClose={this.handerClickResume} style={{
+                    overlay:{
+                        backgroundColor:'gray',
+                    },
+                    content:{
+                        color:'orange'
+                    }
+                }}>
                     <div className="closeBtn">
                         <button onClick={this.handerClickResume}>close modal</button>
                     </div>
