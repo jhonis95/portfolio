@@ -42,7 +42,7 @@ class Home extends React.Component{
                         backgroundColor:'gray',
                     },
                     content:{
-                        color:'orange'
+                        color:'orange',
                     }
                 }}>
                     <div className="closeBtn">
