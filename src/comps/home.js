@@ -8,11 +8,11 @@ class Home extends React.Component{
         super(props);
         this.state={
             isToggleOnBtnResume:false,
-            isToggleOnBtnPortfolio:false,
+            isToggleOnBtnProject:false,
             modalState:false
         }
         this.handerClickResume=this.handerClickResume.bind(this);
-        this.handerClickPortifolio=this.handerClickPortifolio.bind(this);
+        this.handerClickProject=this.handerClickProject.bind(this);
     }
     handerClickResume(){
         this.setState(prevState=>({
@@ -20,9 +20,9 @@ class Home extends React.Component{
             modalState:!prevState.modalState //on click of resume props isOpen of modal will be true 
         }));
     }
-    handerClickPortifolio(){
+    handerClickProject(){
         this.setState(prevState=>({
-            isToggleOnBtnPortfolio:!prevState.isToggleOnBtnPortfolio
+            isToggleOnBtnProject:!prevState.isToggleOnBtnProject
         }));
         if(this.state.isToggleOnBtnPortfolio===true){
         }
@@ -35,7 +35,7 @@ class Home extends React.Component{
                 <p>welcome to my Portfolio</p>
                 <div className="btnContainer">
                     <button id="resumeBtn" onClick={this.handerClickResume}>Resume</button>
-                    <button id="portfolioBtn" onClick={this.handerClickPortifolio}>Portfolio</button>
+                    <button id="projectBtn" onClick={this.handerClickProject}>Portfolio</button>
                 </div>
                 <Modal isOpen={this.state.modalState} onRequestClose={this.handerClickResume} style={{
                     overlay:{

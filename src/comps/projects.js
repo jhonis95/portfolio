@@ -7,14 +7,16 @@ class Projects extends React.Component{
             image:"",
             description:"Show my skills in HTML, CSS and JavaScript making a good look and responsive sing in and sing up page",
             code:"",
-            site:""
+            site:"",
+            technologies:"HTML CSS Java script"//might be better use a array to [] keep all the technologies that was use 
         },
         {
             name:"Stream videos page",
             image:"",
             description:"Show that i can work in more commercial projects making a stream video page using react and some react libraries to complete the projectow my skills in HTML, CSS and JavaScript making a good look and responsive sing in and sing up page",
             code:"",
-            site:""
+            site:"",
+            technologies:"React"
         }
     ]
     render(){
@@ -24,7 +26,7 @@ class Projects extends React.Component{
                 <div className="projectsViewContainer">
                     {
                         this.projects.map((p)=>(
-                            <ProjectsBox name={p.name} description={p.description} image={p.image} code={p.code} site={p.site}/>
+                            <ProjectsBox name={p.name} description={p.description} image={p.image} code={p.code} site={p.site} technologies={p.technologies}/>
                         ))
                     }
                 </div>
