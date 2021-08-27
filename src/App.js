@@ -13,8 +13,8 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom'
 function App() {
   return (
     <>
-      <NavBar/>
       <BrowserRouter>
+        <NavBar/>
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/projects" component={Projects}/>

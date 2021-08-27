@@ -11,15 +11,15 @@ class NavBar extends React.Component{
             <div className="navbar">
                 <Icon image={icon} text="Jonatan De Oliveira" subtext="front-end developer"/>
                 <nav className="navBtn">
-                    {/*<Link to="/">*/}
+                    <Link to="/">
                         <NavBtn ref="Home" namebtn="home"/>
-                    {/*</Link>*/}
-                    {/*<Link to="/about">*/}
+                    </Link>
+                    <Link to="/about">
                         <NavBtn ref="About" namebtn="about me"/>
-                    {/*</Link>*/}
-                    {/*<Link to="/contact">*/}
+                    </Link>
+                    <Link to="/contact">
                         <NavBtn ref="Contact" namebtn="contact"/>
-                    {/*</Link>*/}
+                    </Link>
                 </nav>
             </div>
         );

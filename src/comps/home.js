@@ -1,5 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal'
+import {Link} from 'react-router-dom'
 import './style/home.css'
 Modal.setAppElement('#root')//seting the app element
 
@@ -35,7 +36,7 @@ class Home extends React.Component{
                 <p>welcome to my Portfolio</p>
                 <div className="btnContainer">
                     <button id="resumeBtn" onClick={this.handerClickResume}>Resume</button>
-                    <button id="projectBtn" onClick={this.handerClickProject}>Portfolio</button>
+                    <Link to="/projects"><button id="projectBtn" onClick={this.handerClickProject}>Portfolio</button></Link>
                 </div>
                 <Modal isOpen={this.state.modalState} onRequestClose={this.handerClickResume} style={{
                     overlay:{
