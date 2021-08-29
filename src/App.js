@@ -4,6 +4,8 @@ import NavBar from './comps/navBar';
 import Home from './comps/home';
 import Projects from './comps/projects';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
+import About from './comps/about';
+import Contact from './comps/conatct';
 /*
   BrowserRoute to use react route
   Route to make the route to the links of URL
@@ -18,6 +20,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/projects" component={Projects}/>
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact}/>
         </Switch>
       </BrowserRouter>
     </>

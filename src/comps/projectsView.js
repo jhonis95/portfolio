@@ -14,4 +14,4 @@ class ProjectsBox extends React.Component{
         );
     }
 }
-export default ProjectsBox
+export default ProjectsBox;
