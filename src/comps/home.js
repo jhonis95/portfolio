@@ -32,7 +32,7 @@ class Home extends React.Component{
         return(
             <div className="home">
                 <img src={this.props.image} alt="backGroundImg"/>
-                <h1>Hi my name is Jonantan</h1>
+                <h1>Hi, my name is Jonatan.</h1>
                 <p>welcome to my Portfolio</p>
                 <div className="btnContainer">
                     <button id="resumeBtn" onClick={this.handerClickResume}>Resume</button>
