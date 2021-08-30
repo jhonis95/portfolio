@@ -7,17 +7,18 @@ import {Link} from 'react-router-dom'
 class NavBar extends React.Component{
     render(){
     let icon=Logo;
+    let style={textDecoration: 'none'}
         return(
             <div className="navbar">
                 <Icon image={icon} text="Jonatan De Oliveira" subtext="front-end developer"/>
                 <nav className="navBtn">
-                    <Link to="/">
+                    <Link to="/" style={style}>
                         <NavBtn ref="Home" namebtn="home"/>
                     </Link>
-                    <Link to="/about">
+                    <Link to="/about" style={style}>
                         <NavBtn ref="About" namebtn="about me"/>
                     </Link>
-                    <Link to="/contact">
+                    <Link to="/contact" style={style}>
                         <NavBtn ref="Contact" namebtn="contact"/>
                     </Link>
                 </nav>

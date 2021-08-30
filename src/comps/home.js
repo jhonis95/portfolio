@@ -30,8 +30,8 @@ class Home extends React.Component{
     }
     render(){//resolve the warning 
         return(
-            <div className="home">
-                <img src={this.props.image} alt="backGroundImg"/>
+            <main className="home">
+                {/* <div className="spacer layer1"></div> need to make the back groud*/}
                 <h1>Hi, my name is Jonatan.</h1>
                 <p>welcome to my Portfolio</p>
                 <div className="btnContainer">
@@ -53,7 +53,7 @@ class Home extends React.Component{
                     <img src="" alt=""/>
                     <button>download</button>
                 </Modal>
-            </div>
+            </main>
         );
     }
 }
