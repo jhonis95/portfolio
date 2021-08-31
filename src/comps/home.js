@@ -1,6 +1,7 @@
 import React from 'react'
 import Modal from 'react-modal'
 import {Link} from 'react-router-dom'
+import HomeBackgroud from './homeBackgroud'
 import './style/home.css'
 Modal.setAppElement('#root')//seting the app element
 
@@ -31,7 +32,7 @@ class Home extends React.Component{
     render(){//resolve the warning 
         return(
             <main className="home">
-                {/* <div className="spacer layer1"></div> need to make the back groud*/}
+                <HomeBackgroud backgroudColor="#162d50"/>
                 <h1>Hi, my name is Jonatan.</h1>
                 <p>welcome to my Portfolio</p>
                 <div className="btnContainer">

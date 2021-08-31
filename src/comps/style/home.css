@@ -57,16 +57,7 @@
     transform: translateY(2rem);
     animation: fadeInUp 2s ease 4s forwards;
 }
-/* .spacer{
-    aspect-ratio: 1000/500; to do the back groud
-    width: 100%;
-    background-image: no-repeat;
-    background-position: center;
-    background-size: cover; 
-}
-.layer1{
-    background-image: url("/home/jhonis/Documentos/programing/React projects/portfolio/src/comps/style/images/polygon-scatter-haikei.svg");
-} */
+
 @keyframes typewrite{
     to{
         left: 100%;
