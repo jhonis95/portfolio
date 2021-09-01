@@ -1,0 +1,9 @@
+.svgContainer{
+    width: 100%;
+    height: 95vh;
+    z-index: -1;
+    position: absolute;
+}
+#visual{
+    z-index: -1;
+}

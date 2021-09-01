@@ -1,1 +1,31 @@
-<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect width="900" height="600" fill="#001829"></rect><g><g transform="translate(490 124)"><path d="M0 -85.9L74.4 -42.9L74.4 42.9L0 85.9L-74.4 42.9L-74.4 -42.9Z" fill="#297EA6"></path></g><g transform="translate(584 335)"><path d="M0 -82L71 -41L71 41L0 82L-71 41L-71 -41Z" fill="#297EA6"></path></g><g transform="translate(240 283)"><path d="M0 -83L71.9 -41.5L71.9 41.5L0 83L-71.9 41.5L-71.9 -41.5Z" fill="#297EA6"></path></g><g transform="translate(506 510)"><path d="M0 -53L45.9 -26.5L45.9 26.5L0 53L-45.9 26.5L-45.9 -26.5Z" fill="#297EA6"></path></g><g transform="translate(802 393)"><path d="M0 -54L46.8 -27L46.8 27L0 54L-46.8 27L-46.8 -27Z" fill="#297EA6"></path></g><g transform="translate(694 68)"><path d="M0 -55L47.6 -27.5L47.6 27.5L0 55L-47.6 27.5L-47.6 -27.5Z" fill="#297EA6"></path></g><g transform="translate(42 380)"><path d="M0 -72L62.4 -36L62.4 36L0 72L-62.4 36L-62.4 -36Z" fill="#297EA6"></path></g></g></svg>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="900" height="600">
+
+<g transform="matrix(1 0 0 1 0 0)">
+	<g>
+	</g>
+    <path d="M0 0L900 0L900 600L0 600z" stroke="none" fill="#001829" fill-rule="nonzero" />
+	<g transform="matrix(1 0 0 1 490 124)">
+	</g>
+    <path transform="matrix(1 0 0 1 490 124)"  d="M0 -85.9L74.4 -42.9L74.4 42.9L0 85.9L-74.4 42.9L-74.4 -42.9L0 -85.9z" stroke="none" fill="#297EA6" fill-rule="nonzero" />
+	<g transform="matrix(1 0 0 1 584 335)">
+	</g>
+    <path transform="matrix(1 0 0 1 584 335)"  d="M0 -82L71 -41L71 41L0 82L-71 41L-71 -41L0 -82z" stroke="none" fill="#297EA6" fill-rule="nonzero" />
+	<g transform="matrix(1 0 0 1 240 283)">
+	</g>
+    <path transform="matrix(1 0 0 1 240 283)"  d="M0 -83L71.9 -41.5L71.9 41.5L0 83L-71.9 41.5L-71.9 -41.5L0 -83z" stroke="none" fill="#297EA6" fill-rule="nonzero" />
+	<g transform="matrix(1 0 0 1 506 510)">
+	</g>
+    <path transform="matrix(1 0 0 1 506 510)"  d="M0 -53L45.9 -26.5L45.9 26.5L0 53L-45.9 26.5L-45.9 -26.5L0 -53z" stroke="none" fill="#297EA6" fill-rule="nonzero" />
+	<g transform="matrix(1 0 0 1 802 393)">
+	</g>
+    <path transform="matrix(1 0 0 1 802 393)"  d="M0 -54L46.8 -27L46.8 27L0 54L-46.8 27L-46.8 -27L0 -54z" stroke="none" fill="#297EA6" fill-rule="nonzero" />
+	<g transform="matrix(1 0 0 1 694 68)">
+	</g>
+    <path transform="matrix(1 0 0 1 694 68)"  d="M0 -55L47.6 -27.5L47.6 27.5L0 55L-47.6 27.5L-47.6 -27.5L0 -55z" stroke="none" fill="#297EA6" fill-rule="nonzero" />
+	<g transform="matrix(1 0 0 1 42 380)">
+	</g>
+    <path transform="matrix(1 0 0 1 42 380)"  d="M0 -72L62.4 -36L62.4 36L0 72L-62.4 36L-62.4 -36L0 -72z" stroke="none" fill="#297EA6" fill-rule="nonzero" />
+</g>
+</svg>
