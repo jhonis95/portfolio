@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
+    background-color: #e8ffe8;
 }
 .btnContainer{
     display: flex;
@@ -18,8 +19,8 @@
     transition: all ease 0.3s;
     border-radius: 10%;
     font-size: small;
-    background-color: blue;
-    color: white;
+    background-color:#a6fff2;
+    color: black;
 }
 .home button:hover{
     transform: scale(1.1);
@@ -42,7 +43,7 @@
     bottom: 0;
 }
 .home h1::before{
-    background-color:white;
+    background-color:#e8ffe8;
     animation: typewrite 4s steps(23) 0.5s forwards;
 }
 .home h1::after{

@@ -1,9 +1,18 @@
 .svgContainer{
+    padding-top: 4.8vh;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 95vh;
-    z-index: -1;
+    overflow: hidden;
+    line-height: 0;
     position: absolute;
 }
-#visual{
-    z-index: -1;
+#curve{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10px;
+}
+.shape-fill{
+    fill: black;
 }

@@ -4,24 +4,9 @@ class HomeBackgroud extends React.Component{
     render(){
         return(
             <div className="svgContainer">
-                <svg id="visual" viewBox="0 0 1920 1000" width="1920" height="1000" xmlns="http://www.w3.org/2000/svg" xmlnsxlink="http://www.w3.org/1999/xlink" version="1.1" >
-                 <rect width="1920" height="1000" fill={this.props.backgroudColor}></rect>
-                 <g><g transform="translate(490 124)">
-                     <path d="M0 -85.9L74.4 -42.9L74.4 42.9L0 85.9L-74.4 42.9L-74.4 -42.9Z" fill="#297EA6"></path>
-                 </g><g transform="translate(584 335)">
-                     <path d="M0 -82L71 -41L71 41L0 82L-71 41L-71 -41Z" fill="#297EA6"></path>
-                 </g><g transform="translate(240 283)"
-                     ><path d="M0 -83L71.9 -41.5L71.9 41.5L0 83L-71.9 41.5L-71.9 -41.5Z" fill="#297EA6"></path>
-                 </g><g transform="translate(506 510)">
-                     <path d="M0 -53L45.9 -26.5L45.9 26.5L0 53L-45.9 26.5L-45.9 -26.5Z" fill="#297EA6"></path>
-                 </g><g transform="translate(802 393)">
-                     <path d="M0 -54L46.8 -27L46.8 27L0 54L-46.8 27L-46.8 -27Z" fill="#297EA6"></path>
-                 </g><g transform="translate(694 68)">
-                     <path d="M0 -55L47.6 -27.5L47.6 27.5L0 55L-47.6 27.5L-47.6 -27.5Z" fill="#297EA6"></path>
-                 </g><g transform="translate(42 380)">
-                     <path d="M0 -72L62.4 -36L62.4 36L0 72L-62.4 36L-62.4 -36Z" fill="#297EA6"></path>
-                 </g></g>
-            </svg>
+                <svg data-name="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
             </div>
         );
     }

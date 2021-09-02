@@ -32,7 +32,7 @@ class Home extends React.Component{
     render(){//resolve the warning 
         return(
             <main className="home">
-                <HomeBackgroud backgroudColor="#162d50"/>
+                <HomeBackgroud/>
                 <h1>Hi, my name is Jonatan.</h1>
                 <p>welcome to my Portfolio</p>
                 <div className="btnContainer">
