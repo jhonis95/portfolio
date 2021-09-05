@@ -7,7 +7,7 @@
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
-    background-color: #e8ffe8;
+    background-color: #21e6c1;
 }
 .btnContainer{
     display: flex;
@@ -19,8 +19,8 @@
     transition: all ease 0.3s;
     border-radius: 10%;
     font-size: small;
-    background-color:#a6fff2;
-    color: black;
+    background-color:#278ea5;
+    color: white;
     opacity: 0;
     transform: translateY(2rem);
     animation: fadeInUp 2s ease 4.5s forwards;
@@ -46,7 +46,7 @@
     bottom: 0;
 }
 .home h1::before{
-    background-color:#e8ffe8;
+    background-color:#21e6c1;
     animation: typewrite 4s steps(23) 0.5s forwards;
 }
 .home h1::after{
