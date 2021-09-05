@@ -21,6 +21,9 @@
     font-size: small;
     background-color:#a6fff2;
     color: black;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 2s ease 4.5s forwards;
 }
 .home button:hover{
     transform: scale(1.1);

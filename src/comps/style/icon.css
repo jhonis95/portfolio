@@ -3,6 +3,9 @@
     flex-direction: row;
     align-items: center;
     width: 30vw;
+    opacity: 0;
+    transform: translateX(-2rem);
+    animation: fadeInRigth 2s ease forwards;
 }
 .icon p{
     color: white;
@@ -25,4 +28,10 @@
 #subtext{
     font-size: xx-small;
     margin: 0%;
+}
+@keyframes fadeInRigth{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
