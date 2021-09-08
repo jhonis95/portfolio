@@ -13,6 +13,11 @@
     width: calc(100% + 1.3px);
     height: 10px;
 }
-.shape-fill{
-    fill: black;
+.shape-fill{/*for style the svg*/
+    fill:black;
+}
+@keyframes wave{
+    to{
+        left: 100%;
+    }
 }

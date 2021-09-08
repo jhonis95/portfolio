@@ -41,7 +41,7 @@ class Home extends React.Component{
                 </div>
                 <Modal isOpen={this.state.modalState} onRequestClose={this.handerClickResume} style={{
                     overlay:{
-                        backgroundColor:'gray',
+                        zIndex:3
                     },
                     content:{
                         color:'orange',
@@ -53,6 +53,7 @@ class Home extends React.Component{
                     <h2>My Resume</h2>
                     <img src="" alt=""/>
                     <button>download</button>
+                    <button>contact me</button>
                 </Modal>
             </main>
         );
