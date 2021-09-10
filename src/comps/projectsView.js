@@ -1,4 +1,5 @@
 import React from 'react'
+import './style/projectsView.css'
 class ProjectsBox extends React.Component{
     render(){
         return(

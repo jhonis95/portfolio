@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectsBox from './projectsView';
+import './style/projects.css'
 class Projects extends React.Component{
     projects=[
         {
