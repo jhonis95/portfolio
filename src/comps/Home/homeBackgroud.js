@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/homeBackgroud.css';
+import '../style/homeBackgroud.css';
 class HomeBackgroud extends React.Component{
     render(){
         return(

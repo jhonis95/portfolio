@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/navBtn.css'
+import '../style/navBtn.css'
 class NavBtn extends React.Component{
     render(){
         return(

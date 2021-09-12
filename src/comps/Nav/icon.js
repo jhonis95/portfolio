@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/icon.css'
+import '../style/icon.css'
 class Icon extends React.Component{
     render(){
         return(

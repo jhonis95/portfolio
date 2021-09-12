@@ -2,7 +2,7 @@ import React from 'react'
 import Modal from 'react-modal'
 import {Link} from 'react-router-dom'
 import HomeBackgroud from './homeBackgroud'
-import './style/home.css'
+import '../style/home.css'
 Modal.setAppElement('#root')//seting the app element
 
 class Home extends React.Component{
