@@ -12,7 +12,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
+}
+#mobileNav{
+    display: none;
+}
+#webNav{
+    width:100%;
+}
+@media(max-width:931px){ /*hiding the web navegation */
+    #mobileNav{
+        display: flex;
+        background-color: brown;
+    }
+    #webNav{
+        display: none;
+    }
 }

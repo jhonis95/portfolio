@@ -10,8 +10,8 @@ class NavBar extends React.Component{
         return(
             <nav className="navBar">
                 <Icon image={icon} text="Jonatan De Oliveira" subtext="front-end developer"/>
-                <WebNav/>
-                <MobileNav/>
+                <WebNav />
+                <MobileNav />
             </nav>
         );
     }

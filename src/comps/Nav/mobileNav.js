@@ -1,9 +1,12 @@
 import React from 'react'
+import '../style/navBar.css'
 import NavBarLinks from './navBarLinks';
 class MobileNav extends React.Component{
     render(){
         return(
-            <NavBarLinks/>
+            <div id="mobileNav">
+                <NavBarLinks/>
+            </div>
         );
     }
 }
