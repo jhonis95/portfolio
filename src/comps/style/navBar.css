@@ -23,8 +23,15 @@
     #mobileNav{
         display: flex;
         background-color: brown;
+        align-items: center;
     }
     #webNav{
         display: none;
+    }
+    .hambugerMenu{
+        position: absolute;
+        right: 5%;
+        color: white;
+        cursor: pointer;
     }
 }
