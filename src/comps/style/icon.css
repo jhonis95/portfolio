@@ -35,3 +35,8 @@
         transform: translateX(0);
     }
 }
+@media(max-width:931px){ /*hiding the web navegation */
+    .icon{
+        width: 60vw;
+    }
+}

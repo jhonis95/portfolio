@@ -79,3 +79,27 @@
         transform: translateY(0);
     }
 }
+@media(max-width:931px){ /*hiding the web navegation */
+    .btnContainer{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:580px){ /*where the h1 tag break */
+    .home h1::before,
+    .home h1::after{
+        content: none;
+    }
+    .home h1{
+        opacity: 0;
+        transform: translateY(2rem);
+        animation: fadeInUp 2s ease 1s forwards;
+        text-align: center;
+    }
+    .home p{
+        animation: fadeInUp 2s ease 2s forwards;
+    }
+    .home button{
+        animation: fadeInUp 2s ease 3s forwards;
+    }
+}
