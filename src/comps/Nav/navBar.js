@@ -1,19 +1,18 @@
-import React from 'react'
-import '../style/navBar.css'
-import Icon from './icon';
-import Logo from '../style/images/Logo.png';
-import WebNav from './webNav';
-import MobileNav from './mobileNav'
-class NavBar extends React.Component{
+import React, { Component } from 'react';
+
+class navBar extends Component{
     render(){
-    let icon=Logo;
         return(
-            <nav className="navBar">
-                <Icon image={icon} text="Jonatan De Oliveira" subtext="front-end developer"/>
-                <WebNav />
-                <MobileNav />
-            </nav>
-        );
+            <>
+                <img src="" alt=""/>
+                <h2 className="title">Jhonis.dev</h2>
+                <ul>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                </ul>
+            </>
+        )
     }
 }
-export default NavBar;
+export default navBar
