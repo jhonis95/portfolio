@@ -1,11 +1,6 @@
 
 import './App.css';
-import NavBar from './comps/Nav/navBar';
-import Home from './comps/Home/home';
-import Projects from './comps/projects';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
-import About from './comps/about';
-import Contact from './comps/conatct';
 /*
   BrowserRoute to use react route
   Route to make the route to the links of URL
