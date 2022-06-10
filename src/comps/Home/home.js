@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import NavBar from './Nav/navBar.js'
 
-class home extends Component{
-    constructor(pros){
-        super(pros);
-        this.state={
-
-        }
-    }
+class Home extends Component{
     render(){
         return(
             <section className="home" id="home">
-                <NavBar />
+                <div className='pictureBackLayer'></div>
+                <h1 className='title' id='devName'>Jonatan de Oliveira</h1>
+                <h2>Web Developer</h2>
+                <p>a bit asbout me</p>
+                <h2>Skills:</h2>
             </section>
         )
     }
 }
-export default home;
+export default Home;
