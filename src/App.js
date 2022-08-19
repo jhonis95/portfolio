@@ -1,6 +1,6 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import NavBar from './comps/Nav/navBar.js'
-import Home from './comps/Home/home.js'
+import Home from './comps/Pages/home'
 
 /*
   BrowserRoute to use react route

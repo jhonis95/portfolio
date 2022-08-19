@@ -1,6 +1,6 @@
 import {Component} from "react";
 
-class skills extends Component{
+class Skills extends Component{
     render(){
         return(
             <div className="skills-Container">
@@ -13,4 +13,4 @@ class skills extends Component{
     }
 }
 
-export default skills;
+export default Skills;

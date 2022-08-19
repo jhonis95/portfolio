@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const NavbarContainer= styled.div`
     display: flex;
-    height: 50px;
+    height: 5vh;
     align-items: center;
     justify-content: space-between;
     position: static;
