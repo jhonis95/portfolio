@@ -30,29 +30,26 @@ const DevImg=styled.img`
     border: 2px solid rgba(33, 230, 193, 1);
     border-radius: 10px;
 `
-class Home extends Component{
-    render(){
-        return(
-            <HomeContainer className="home" id="home">
-                <DevImgContainer>
-                    <BackgroundShape/>
-                    <DevImg src={devImg} alt='dev picture'/>
-                </DevImgContainer>
-                <DevInfoContainer>
-                    <h1>Jonatan de Oliveira</h1>
-                    <h2>Web Developer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-                </DevInfoContainer>
-                <DevskillContainer>
-                    <h2>Skills:</h2>
-                    <Skills/>
-                </DevskillContainer>
-                <ModalsLinksContainer>
-                    <Button btnName={'My Resulme'}/>
-                    <Button btnName={'About Me'}/>
-                </ModalsLinksContainer>
-            </HomeContainer>
-        )
-    }
+export default function Home(){
+    return(
+        <HomeContainer className="home" id="home">
+            <DevImgContainer>
+                <BackgroundShape/>
+                <DevImg src={devImg} alt='dev picture'/>
+            </DevImgContainer>
+            <DevInfoContainer>
+                <h1>Jonatan de Oliveira</h1>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
+            </DevInfoContainer>
+            <DevskillContainer>
+                <h2>Skills:</h2>
+                <Skills/>
+            </DevskillContainer>
+            <ModalsLinksContainer>
+                <Button btnName={'My Resulme'}/>
+                <Button btnName={'About Me'}/>
+            </ModalsLinksContainer>
+        </HomeContainer>
+    )
 }
-export default Home;

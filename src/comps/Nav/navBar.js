@@ -50,23 +50,19 @@ const DevDescription=styled(DevName)`
     grid-area: 2 / 2 / 3 / 3;
     font-size: small;
 `
-
-class navBar extends Component{
-    render(){
-        return(
-            <NavbarContainer>
-                <DevInfContainer>
-                    <Logo src={logo} alt="logo"/>
-                    <DevName>Jhonis.dev</DevName>
-                    <DevDescription>front end developer</DevDescription>
-                </DevInfContainer>
-                <ButtonContainer>
-                    <Button>Home</Button>
-                    <Button>Projects</Button>
-                    <Button>Contact</Button>
-                </ButtonContainer>
-            </NavbarContainer>
-        )
-    }
+export default function navBar(){
+    return(
+        <NavbarContainer>
+            <DevInfContainer>
+                <Logo src={logo} alt="logo"/>
+                <DevName>Jhonis.dev</DevName>
+                <DevDescription>front end developer</DevDescription>
+            </DevInfContainer>
+            <ButtonContainer>
+                <Button>Home</Button>
+                <Button>Projects</Button>
+                <Button>Contact</Button>
+            </ButtonContainer>
+        </NavbarContainer>
+    )
 }
-export default navBar
