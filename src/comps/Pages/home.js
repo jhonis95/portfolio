@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import styled from 'styled-components';
 import devImg from '../assets/profile.jpg'
 import Skills from '../skills';
@@ -43,7 +42,6 @@ export default function Home(){
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
             </DevInfoContainer>
             <DevskillContainer>
-                <h2>Skills:</h2>
                 <Skills/>
             </DevskillContainer>
             <ModalsLinksContainer>
