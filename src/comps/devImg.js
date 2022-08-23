@@ -14,6 +14,7 @@ const DevImg=styled.img`
     position: absolute;
     border: 2px solid rgba(33, 230, 193, 1);
     border-radius: 10px;
+    object-fit: cover;
     z-index: 2;
     filter: brightness(1.2);
     box-shadow: 5px 4px 14px 4px rgba(0,0,0,0.39);

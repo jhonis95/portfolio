@@ -28,11 +28,15 @@ const DevInfoContainer=styled.div`
     grid-area: DevInfoContainer;
 `
 const DevskillContainer=styled.div`
-    background-color: aqua;
     grid-area: DevskillContainer;
 `
 const ModalsLinksContainer=styled.div`
-    background-color: aquamarine;
+    display: flex;
+    margin: auto 0;
+    height: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     grid-area: ModalsLinksContainer;
 `
 export default function Home(){
@@ -48,8 +52,16 @@ export default function Home(){
                 <Skills/>
             </DevskillContainer>
             <ModalsLinksContainer>
-                <Button btnName={'My Resulme'}/>
-                <Button btnName={'About Me'}/>
+                <Button 
+                    btnName={'My Resume'}
+                    textSize={'2.25'}
+                    buttonColor={'rgba(33, 230, 193, 1)'}
+                />
+                <Button 
+                    btnName={'About Me'}
+                    textSize={'2.25'}
+                    textColor={'rgba(39, 142, 165, 1)'}
+                />
             </ModalsLinksContainer>
         </HomeContainer>
     )

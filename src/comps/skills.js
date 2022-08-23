@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SkillCard from "./skillCard"
-// import { useState } from "react"
+
 const SecondText=styled.h2`
     font-size: 3rem;
 `
@@ -14,17 +14,45 @@ const CardContainer= styled(SkillsContainer)`
     grid-template-columns: repeat(auto-fill, 186px);
 `
 export default function Skills(){
-    const skills=['HTML','CSS','JavaScrip','React']
+    const skills=['html','css','javascript','react','git']
+    const cardContente={
+        html:{
+            color:'rgba(239, 52, 0, 1)',
+            icon:'FaHtml5',
+            text:'HTML'
+        },
+        css:{
+            color:'rgba(49, 84, 183, 1)',
+            icon:'FaCss3Alt',
+            text:'CSS'
+        },
+        javascript:{
+            color:'rgba(236, 249, 10, 1)',
+            icon:'FaJsSquare',
+            text:'JavaScript'
+        },
+        react:{
+            color:'rgba(90, 218, 253, 1)',
+            icon:'FaReact',
+            text:'React js'
+        },
+        git:{
+            color:'rgba(240, 80, 51, 1)',
+            icon: 'FaGitSquare',
+            text:'Git'
+        },
+    }
     return(
         <SkillsContainer>
             <SecondText>Skills</SecondText>
             <CardContainer>
                 {
                     skills.map((lin,index)=>{
-                        
                         return(
                             <SkillCard
-                                skillName={lin}
+                                icon={cardContente[lin].icon}
+                                backgroundColor={cardContente[lin].color}
+                                text={cardContente[lin].text}
                                 key={index}
                             />
                         )
