@@ -1,45 +1,48 @@
 import styled from 'styled-components';
-import devImg from '../assets/profile.jpg'
 import Skills from '../skills';
 import Button from '../button'
+import DevImg from '../devImg';
+import DevInfo from '../devInfo'
 
 const HomeContainer = styled.section`
     width: 100%;
     height: 95vh;
-    display: grid;
+    display: grid; 
+    grid-template-columns: 0.8fr 1.9fr 0.8fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "DevImgContainer .  ModalsLinksContainer"
+      "DevImgContainer DevInfoContainer ModalsLinksContainer"
+      "DevImgContainer DevskillContainer ModalsLinksContainer"; 
 `
 const DevImgContainer=styled.div`
-    background-color: aliceblue;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: DevImgContainer;
 `
 const DevInfoContainer=styled.div`
-    background-color: antiquewhite;
+    grid-area: DevInfoContainer;
 `
 const DevskillContainer=styled.div`
     background-color: aqua;
+    grid-area: DevskillContainer;
 `
 const ModalsLinksContainer=styled.div`
     background-color: aquamarine;
-`
-const BackgroundShape=styled.div`
-
-`
-const DevImg=styled.img`
-    width: 336px;
-    height: 430px;
-    border: 2px solid rgba(33, 230, 193, 1);
-    border-radius: 10px;
+    grid-area: ModalsLinksContainer;
 `
 export default function Home(){
     return(
         <HomeContainer className="home" id="home">
             <DevImgContainer>
-                <BackgroundShape/>
-                <DevImg src={devImg} alt='dev picture'/>
+                <DevImg />
             </DevImgContainer>
             <DevInfoContainer>
-                <h1>Jonatan de Oliveira</h1>
-                <h2>Web Developer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
+                <DevInfo/>
             </DevInfoContainer>
             <DevskillContainer>
                 <Skills/>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CardContainer=styled.div`
+const Card=styled.div`
     background-color: bisque;
     height: 15px;
     width: 100px;
@@ -8,8 +8,8 @@ const CardContainer=styled.div`
 
 export default function skillCard(props){
     return(
-        <CardContainer>
+        <Card>
             {props.skillName}           
-        </CardContainer>
+        </Card>
     )
 }
