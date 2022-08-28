@@ -2,16 +2,16 @@ import styled from "styled-components"
 import SkillCard from "./skillCard"
 
 const SecondText=styled.h2`
-    font-size: 3rem;
+    font-size: ${props=>props.textSize?props.textSize:'3rem'};
 `
-
 const SkillsContainer= styled.div`
-    
+    width: 100%;
+
 `
 const CardContainer= styled(SkillsContainer)`
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, 186px);
+    grid-template-columns: ${props=>props.cardSize?'repeat(auto-fill, 150px)':'repeat(auto-fill, 186px)'};
 `
 export default function Skills(props){
     const cardContente={
@@ -43,8 +43,14 @@ export default function Skills(props){
     }
     return(
         <SkillsContainer>
-            <SecondText>Skills</SecondText>
-            <CardContainer>
+            <SecondText
+                textSize={props.textSize}
+            >   
+                {props.title?props.title:'Skills'}
+            </SecondText>
+            <CardContainer
+                cardSize={props.cardSize}
+            >
                 {
                     props.skills.map((lin,index)=>{
                         return(

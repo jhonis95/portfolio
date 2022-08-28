@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Btn = styled.button`
     width: ${props=>props.btnWidth?props.btnWidth:'267px'};
-    padding: 20px;
+    padding: ${props=>props.btnWidth?'0px':'20px'};
     color:${props=>props.textColor?props.textColor:'black'};
     background-color: ${props=>props.buttonColor?props.buttonColor:'white'};
     font-size: ${props=>props.fontSize}rem;
