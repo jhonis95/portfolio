@@ -1,5 +1,6 @@
 import logo from '../assets/logo.png'
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 const NavbarContainer= styled.div`
     display: flex;
@@ -9,6 +10,7 @@ const NavbarContainer= styled.div`
     position: static;
     width: 100%;
     box-shadow: 0 0 1em gray;
+    background-color: white;
 `
 const ButtonContainer=styled.ul`
     width: 20rem;
@@ -58,8 +60,8 @@ export default function navBar(){
                 <DevDescription>front end developer</DevDescription>
             </DevInfContainer>
             <ButtonContainer>
-                <Button>Home</Button>
-                <Button>Projects</Button>
+                <Link to="/">Home</Link>
+                <Link to="/projects">Projects</Link>
                 <Button>Contact</Button>
             </ButtonContainer>
         </NavbarContainer>

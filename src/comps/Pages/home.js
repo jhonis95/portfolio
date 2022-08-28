@@ -49,7 +49,7 @@ export default function Home(){
                 <DevInfo/>
             </DevInfoContainer>
             <DevskillContainer>
-                <Skills/>
+                <Skills skills={['html','css','javascript','react','git']}/>
             </DevskillContainer>
             <ModalsLinksContainer>
                 <Button 

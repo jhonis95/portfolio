@@ -1,6 +1,7 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import NavBar from './comps/Nav/navBar.js'
 import Home from './comps/Pages/home'
+import Projects from './comps/Pages/projects.js';
 
 /*
   BrowserRoute to use react route
@@ -14,6 +15,7 @@ function App() {
         <NavBar/>
         <Switch>
           <Route path="/" exact component={Home}/>
+          <Route path="/projects" component={Projects}/>
         </Switch>
       </BrowserRouter>
     </>

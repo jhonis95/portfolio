@@ -13,8 +13,7 @@ const CardContainer= styled(SkillsContainer)`
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, 186px);
 `
-export default function Skills(){
-    const skills=['html','css','javascript','react','git']
+export default function Skills(props){
     const cardContente={
         html:{
             color:'rgba(239, 52, 0, 1)',
@@ -47,7 +46,7 @@ export default function Skills(){
             <SecondText>Skills</SecondText>
             <CardContainer>
                 {
-                    skills.map((lin,index)=>{
+                    props.skills.map((lin,index)=>{
                         return(
                             <SkillCard
                                 icon={cardContente[lin].icon}

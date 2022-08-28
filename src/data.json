@@ -1,0 +1,29 @@
+{
+    "skillCardContent":{
+        "html":{
+            "color":"rgba(239, 52, 0, 1)",
+            "icon":"FaHtml5",
+            "text":"HTML"
+        },
+        "css":{
+            "color":"rgba(49, 84, 183, 1)",
+            "icon":"FaCss3Alt",
+            "text":"CSS"
+        },
+        "javascript":{
+            "color":"rgba(236, 249, 10, 1",
+            "icon":"FaJsSquare",
+            "text":"JavaScript"
+        },
+        "react":{
+            "color":"rgba(90, 218, 253, 1",
+            "icon":"FaReact",
+            "text":"React js"
+        },
+        "git":{
+            "color":"rgba(240, 80, 51, 1)",
+            "icon":"FaGitSquare",
+            "text":"Git"
+        }
+    }
+}

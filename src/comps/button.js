@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Btn = styled.button`
-    min-width: 267px;
+    width: ${props=>props.btnWidth?props.btnWidth:'267px'};
     padding: 20px;
     color:${props=>props.textColor?props.textColor:'black'};
     background-color: ${props=>props.buttonColor?props.buttonColor:'white'};
@@ -16,6 +16,7 @@ export default function Button(props){
             fontSize={props.textSize}
             buttonColor={props.buttonColor}
             textColor={props.textColor}
+            btnWidth={props.btnWidth}
         >
             {props.btnName}
         </Btn>
