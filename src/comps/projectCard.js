@@ -37,7 +37,9 @@ const Text=styled.p`
     margin: 10px 10px;
     text-align: justify;
 `
+const LearnedContainer=styled.div`
 
+`
 
 
 export default function ProjectCard(props){
@@ -71,6 +73,11 @@ export default function ProjectCard(props){
                 </div>
             </ProjectImage>
             <ProjectInfo>
+                <LearnedContainer>
+                    {
+
+                    }
+                </LearnedContainer>
                 <Skills
                     skills={['html','css','javascript']}
                     textSize={'2rem'}
@@ -80,4 +87,8 @@ export default function ProjectCard(props){
             </ProjectInfo>
         </ProjectCardContainer>
     )
+}
+
+function SetLearned(){
+    
 }

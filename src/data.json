@@ -25,5 +25,31 @@
             "icon":"FaGitSquare",
             "text":"Git"
         }
+    },
+
+    "project":{
+        "To Do List":{
+            "title":"To Do List",
+            "description":"Uma lista de tarefas que foi criada para mostrar a habilidade em manipulação do DOM e dados.",
+            "learned":[
+                "Manipulção do DOM",
+                "Eventos em CSS",
+                "Manipulação de dados de um objeto em JS",
+                "Forms",
+                "Desing Responsivo",
+                "Programação Orientada a Objetos"
+            ]
+        },
+        "Weather App":{
+            "title":"Waather App",
+            "description":"Um pequeno aplicativo que mostra o clima na região pesquisada, usando algumas APIs como a do google para disponibilizar imagens do local",
+            "learned":[
+                "Styled Components",
+                "Uso de APIs",
+                "JSON",
+                "NPM",
+                ""
+            ]
+        }
     }
 }

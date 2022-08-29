@@ -6,7 +6,7 @@ import DevInfo from '../devInfo'
 
 const HomeContainer = styled.section`
     width: 100%;
-    height: 95vh;
+    height: 94vh;
     display: grid; 
     grid-template-columns: 0.8fr 1.9fr 0.8fr; 
     grid-template-rows: 1fr 1fr 1fr; 
@@ -26,6 +26,7 @@ const DevImgContainer=styled.div`
 `
 const DevInfoContainer=styled.div`
     grid-area: DevInfoContainer;
+    margin: 0px 20px;
 `
 const DevskillContainer=styled.div`
     grid-area: DevskillContainer;
@@ -34,6 +35,7 @@ const ModalsLinksContainer=styled.div`
     display: flex;
     margin: auto 0;
     height: 30rem;
+    margin-right:10px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;

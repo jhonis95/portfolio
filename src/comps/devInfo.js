@@ -9,7 +9,7 @@ const SecondText=styled.h2`
     opacity: 50%;
 `
 const Text=styled.p`
-
+    text-align: justify;
 `
 
 

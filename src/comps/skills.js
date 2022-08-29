@@ -3,10 +3,11 @@ import SkillCard from "./skillCard"
 
 const SecondText=styled.h2`
     font-size: ${props=>props.textSize?props.textSize:'3rem'};
+    text-align: ${props=>props.textSize?'center':'start'};
 `
 const SkillsContainer= styled.div`
     width: 100%;
-
+    margin: 0px 30px;
 `
 const CardContainer= styled(SkillsContainer)`
     display: grid;
