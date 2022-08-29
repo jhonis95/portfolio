@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import Skills from "../skills"
 import ProjectCard from "../projectCard"
 
 const ProjectsContainer=styled.section`
@@ -30,9 +29,6 @@ export default function projects(){
                                 projectName={proj}
                                 key={index}
                             >
-                                <Skills
-                                    skills={['html','css','javascript']}
-                                />
                             </ProjectCard>
                         )
                 })
@@ -40,18 +36,3 @@ export default function projects(){
         </ProjectsContainer>
     )
 }
-// function setProjects(projects){
-//     projects.map((proj,index)=>{
-//         return(
-//             // <ProjectCard
-//             //     projectName={proj}
-//             //     key={index}
-//             // >
-//             //     <Skills
-//             //         skills={['html','css','javascript']}
-//             //     />
-//             // </ProjectCard>
-//             <h1>{'test'}</h1>
-//         )
-//     })
-// }

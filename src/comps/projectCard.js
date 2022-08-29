@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import Button from "./button"
+import Skills from "./skills"
+import toDoListImg from "./assets/toDoList.png"
 
 const ProjectCardContainer=styled.div`
     width: 1144px;
@@ -8,6 +10,8 @@ const ProjectCardContainer=styled.div`
     justify-content: flex-start;
     border: 4px solid black;
     border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: black;
 `
 const ProjectImage=styled.div`
     width: 50%;
@@ -17,7 +21,7 @@ const ProjectImage=styled.div`
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-image: url(${props=>props.backGroundImg}),linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(54,54,54,1) 35%, rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)),url(${props=>props.backGroundImg});
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -47,7 +51,7 @@ export default function ProjectCard(props){
     return(
         <ProjectCardContainer>
             <ProjectImage
-                backGroundImg={''}
+                backGroundImg={toDoListImg}
             >   
                 <Title>{props.projectName}</Title>
                 <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id, obcaecati autem debitis, enim, totam magni animi ipsum neque soluta sit quidem rerum consectetur iure in inventore doloribus voluptatibus. Dolore.</Text>
@@ -67,7 +71,12 @@ export default function ProjectCard(props){
                 </div>
             </ProjectImage>
             <ProjectInfo>
-
+                <Skills
+                    skills={['html','css','javascript']}
+                    textSize={'2rem'}
+                    title={'Tecnologies'}
+                    cardSize={'150px'}
+                />
             </ProjectInfo>
         </ProjectCardContainer>
     )
