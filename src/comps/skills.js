@@ -4,15 +4,16 @@ import SkillCard from "./skillCard"
 const SecondText=styled.h2`
     font-size: ${props=>props.textSize?props.textSize:'3rem'};
     text-align: ${props=>props.textSize?'center':'start'};
+    margin-left: ${props=>props.textSize?'0px':'20px'};
 `
 const SkillsContainer= styled.div`
     width: 100%;
-    margin: 0px 30px;
 `
 const CardContainer= styled(SkillsContainer)`
     display: grid;
     grid-gap: 10px;
     grid-template-columns: ${props=>props.cardSize?'repeat(auto-fill, 150px)':'repeat(auto-fill, 186px)'};
+    justify-content: center;
 `
 export default function Skills(props){
     const cardContente={

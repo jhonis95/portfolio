@@ -46,9 +46,10 @@
             "learned":[
                 "Styled Components",
                 "Uso de APIs",
-                "JSON",
                 "NPM",
-                ""
+                "React state",
+                "React props",
+                "Resolução do CORS erro"
             ]
         }
     }

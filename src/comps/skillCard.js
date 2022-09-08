@@ -8,6 +8,7 @@ const Card=styled.div`
     justify-content: center;
     border-radius: 5px;
     border: 2px solid black;
+    margin-bottom: 10px;
 `
 const Text=styled.p`
     margin: 5px 0px;
