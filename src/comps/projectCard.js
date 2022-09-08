@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Button from "./button"
 import Skills from "./skills"
 import toDoListImg from "./assets/toDoList.png"
+import Learned from "./learned"
 
 const ProjectCardContainer=styled.div`
     width: 1144px;
@@ -37,7 +38,9 @@ const Text=styled.p`
     margin: 10px 10px;
     text-align: justify;
 `
+const LearnedContainer=styled.div`
 
+`
 
 
 export default function ProjectCard(props){
@@ -47,7 +50,9 @@ export default function ProjectCard(props){
         margin:"10px 0",
         justifyContent:"space-evenly",
       };
-  
+    const data={//need to revision
+
+    }
     return(
         <ProjectCardContainer>
             <ProjectImage
@@ -71,6 +76,13 @@ export default function ProjectCard(props){
                 </div>
             </ProjectImage>
             <ProjectInfo>
+                <LearnedContainer>
+                    <Learned
+                        content={data}
+                    >
+
+                    </Learned>
+                </LearnedContainer>
                 <Skills
                     skills={['html','css','javascript']}
                     textSize={'2rem'}

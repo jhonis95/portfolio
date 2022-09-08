@@ -8,13 +8,13 @@ const Card=styled.div`
     justify-content: center;
     border-radius: 5px;
     border: 2px solid black;
+    margin-bottom: 10px;
 `
 const Text=styled.p`
     margin: 5px 0px;
     font-size: large;
-    color: white;
-    font-weight: bold;
-    -webkit-text-stroke: 0.5px #000;
+    font-weight: 1000;
+    -webkit-text-stroke: 0.8px white;
 `
 export default function skillCard(props){
     return(

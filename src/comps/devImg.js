@@ -9,9 +9,8 @@ const BackgroundShape=styled.div`
     z-index: 1;
 `
 const DevImg=styled.img`
-    width: 330px;
+    width: 300px;
     height: 400px;
-    position: absolute;
     border: 2px solid rgba(33, 230, 193, 1);
     border-radius: 10px;
     object-fit: cover;
