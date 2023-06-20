@@ -3,13 +3,18 @@ import styled from "styled-components"
 const LearnedList= styled.ul`
 
 `
-const Content=styled.p`
-    
+const Content=styled.li`
+    font-size: small;
 `
 export default function Learned(props){
+    const list=props.content.map((text)=>{
+        return <Content key={props.content.indexOf(text)}>{text}</Content>
+    })
     return(
-        <LearnedList>
-            <Content>{props.content}</Content>
-        </LearnedList>
+            <LearnedList>
+                { 
+                    list
+                }
+            </LearnedList>
     )
 }

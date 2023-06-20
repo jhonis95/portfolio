@@ -18,20 +18,22 @@ const PageTitle=styled.h1`
 `
 
 export default function projects(){
-    let projects=['To Do List','Weather App']
+    // let projects=['To Do List','Weather App']
+    // console.log(_data)
     return(
         <ProjectsContainer>
             <PageTitle>Projects</PageTitle>
             {
-                projects.map((proj,index)=>{
-                        return(
+                // projects.map((proj,index)=>{
+                //         return(
                             <ProjectCard
-                                projectName={proj}
-                                key={index}
+                                projectName={"Test"}
+                                // key={1}
                             >
                             </ProjectCard>
-                        )
-                })
+                //         )
+                // })
+                
             }
         </ProjectsContainer>
     )
