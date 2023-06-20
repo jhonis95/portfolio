@@ -3,6 +3,7 @@ import Button from "./button"
 import Skills from "./skills"
 import toDoListImg from "./assets/toDoList.png"
 import Learned from "./learned"
+import data from "../data.json"
 
 const ProjectCardContainer=styled.div`
     width: 1144px;
@@ -50,9 +51,6 @@ export default function ProjectCard(props){
         margin:"10px 0",
         justifyContent:"space-evenly",
       };
-    const data={//need to revision
-
-    }
     return(
         <ProjectCardContainer>
             <ProjectImage
@@ -78,7 +76,7 @@ export default function ProjectCard(props){
             <ProjectInfo>
                 <LearnedContainer>
                     <Learned
-                        content={data}
+                        content={data.project["To Do List"].learned}
                     >
 
                     </Learned>

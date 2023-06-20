@@ -27,15 +27,6 @@ const DevInfContainer=styled.div`
     grid-column-gap: 5px;
     margin-left: 5px;
 `
-const Button=styled.a`
-    background-color: white;
-    margin: 2px;
-    padding: 3px;
-    &:hover{
-        border: 2px solid black;
-        border-radius: 5px;
-    }
-`
 const Logo =styled.img`
     width: 50px;
     border-radius: 50px;
@@ -62,7 +53,7 @@ export default function navBar(){
             <ButtonContainer>
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
-                <Button>Contact</Button>
+                <Link to="/contact">Contact</Link>
             </ButtonContainer>
         </NavbarContainer>
     )
