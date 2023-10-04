@@ -24,11 +24,20 @@ module.exports = {
       "name": "pages",
       "path": "./src/pages/"
     },
+    options:{
+      "name": "data",
+      "path": "./src/data/"
+    },
+    options:{
+      "name": "style",
+      "path": "./src/style/"
+    },
     __key: "pages"
-  },"`gatsby-transformer-json`",{
+  },"gatsby-transformer-json",{
     resolve: `gatsby-source-filesystem`,
     options: {
     path: `./src/data/`,
     },
+    __key: "data"
   }]
 };
