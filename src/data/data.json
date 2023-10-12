@@ -34,5 +34,22 @@
             "linkTo":"#contato",
             "title":"Contato"
         }
-    ]
+    ],
+    "home":{
+        "homeImage":"",
+        "homeTitle":"Jonatan de oliveira",
+        "subTitle":"Desenvolvedor Web",
+        "description":"Focado em desenvolvimento de sites e sistemas web que geram valor ao produto.",
+        "skills":{
+            "title":"habilidades",
+            "iconsImages":[
+                {
+                    "title":"",
+                    "imageLink":""
+                },{
+
+                }
+            ]
+        }
+    }
 }
