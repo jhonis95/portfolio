@@ -20,12 +20,16 @@ function NavBar(){
         <nav>
             <div>
                 <StaticImage
+<<<<<<< HEAD
                     src="../images/logo.png"
                     alt="A dinosaur"
                     placeholder="blurred"
                     layout="fixed"
                     width={65}
                     height={65}
+=======
+
+>>>>>>> d5babe258c42c3a773d52f7d661415b2174a051f
                 />
                 <h3>jhonis.dev</h3>
             </div>
