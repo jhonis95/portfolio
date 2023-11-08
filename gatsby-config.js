@@ -6,12 +6,21 @@ module.exports = {
     title: `portfolio`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: [
+    'gatsby-plugin-postcss',
+    "gatsby-plugin-image", 
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-mdx", 
+    "gatsby-transformer-remark", 
+    "gatsby-plugin-sharp", 
+    "gatsby-transformer-sharp", 
+    "gatsby-transformer-json",
+  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
     },
-  }, "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -30,10 +39,10 @@ module.exports = {
     },
     options:{
       "name": "style",
-      "path": "./src/style/"
+      "path": "./src/styles/"
     },
     __key: "pages"
-  },"gatsby-transformer-json",{
+  },{
     resolve: `gatsby-source-filesystem`,
     options: {
     path: `./src/data/`,
