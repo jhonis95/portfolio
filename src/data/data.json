@@ -23,15 +23,15 @@
     ],
     "navBar_buttons":[
         {
-            "linkTo":"#home",
+            "linkTo":"/home",
             "title":"Home"
         },
         {
-            "linkTo":"#projetos",
+            "linkTo":"/projetos",
             "title":"Projetos"
         },
         {
-            "linkTo":"#contato",
+            "linkTo":"/contato",
             "title":"Contato"
         }
     ],

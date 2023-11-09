@@ -10,17 +10,18 @@ module.exports = {
     'gatsby-plugin-postcss',
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap",
+    "gatsby-transformer-json", 
     "gatsby-plugin-mdx", 
     "gatsby-transformer-remark", 
     "gatsby-plugin-sharp", 
-    "gatsby-transformer-sharp", 
-    "gatsby-transformer-json",
+    "gatsby-transformer-sharp",
+    
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
     },
-  }, {
+  },{
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -33,20 +34,20 @@ module.exports = {
       "name": "pages",
       "path": "./src/pages/"
     },
+    __key: "pages"
+  },{
+    resolve: 'gatsby-source-filesystem',
     options:{
       "name": "data",
       "path": "./src/data/"
     },
+    __key: "data"
+  },{
+    resolve: 'gatsby-source-filesystem',
     options:{
       "name": "style",
       "path": "./src/styles/"
     },
-    __key: "pages"
-  },{
-    resolve: `gatsby-source-filesystem`,
-    options: {
-    path: `./src/data/`,
-    },
-    __key: "data"
+    __key: "styles"
   }]
 };
