@@ -1,31 +1,25 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "web_developer_ortfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Projects Show Case",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jonatan de Oliveira <j.jhonis95@gmail.com>",
   "dependencies": {
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.0",
-    "gatsby-plugin-manifest": "^5.12.0",
+    "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-sharp": "^5.12.0",
     "gatsby-source-filesystem": "^5.12.0",
-    "gatsby-transformer-sharp": "^5.12.0",
+    "gatsby-source-wordpress": "^7.12.3",
+    "gatsby-transformer-json": "^2.11.0",
+    "gatsby-transformer-sharp": "^2.12.1",
     "react": "^18.2.0",
-<<<<<<< HEAD
-    "react-dom": "^18.2.0",
-    "react-uuid": "^2.0.0"
-=======
     "react-dom": "^18.2.0"
->>>>>>> Development
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
-    "gatsby-plugin-postcss": "^6.12.0",
+    "gatsby-plugin-postcss": "^3.7.0",
     "postcss": "^8.4.31",
-<<<<<<< HEAD
-    "tailwindcss": "^3.3.5"
-=======
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.5"
   },
@@ -48,6 +42,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
->>>>>>> Development
   }
 }

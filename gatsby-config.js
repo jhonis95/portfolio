@@ -15,6 +15,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-transformer-json`,
     'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     {
@@ -22,6 +23,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -39,6 +47,22 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+          // Specify the URL of the WordPress source
+          baseUrl: `localhost:8888/wordpress`,
+          protocol: `http`,
+          // Indicates if a site is hosted on WordPress.com
+          hostingWPCOM: false,
+          // Specify which URL structures to fetch
+          includedRoutes: [
+            '**/posts',
+            '**/tags',
+            '**/categories'
+          ]
+      }
     },
   ],
 }
