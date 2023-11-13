@@ -51,17 +51,18 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+          url:`http://localhost:3001/graphql`,
           // Specify the URL of the WordPress source
-          baseUrl: `localhost:8888/wordpress`,
-          protocol: `http`,
-          // Indicates if a site is hosted on WordPress.com
-          hostingWPCOM: false,
-          // Specify which URL structures to fetch
-          includedRoutes: [
-            '**/posts',
-            '**/tags',
-            '**/categories'
-          ]
+          // baseUrl: `http://localhost:3001/`,
+          // protocol: `http`,
+          // // Indicates if a site is hosted on WordPress.com
+          // hostingWPCOM: false,
+          // // Specify which URL structures to fetch
+          // includedRoutes: [
+          //   '**/posts',
+          //   '**/tags',
+          //   '**/categories'
+          // ]
       }
     },
   ],
