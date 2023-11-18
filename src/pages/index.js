@@ -4,12 +4,12 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Home from "../components/home"
+import Header from "../components/header"
 
 
 const IndexPage = () => (
   <Layout>
-    <Home/>
+    <Header/>
   </Layout>
 )
 

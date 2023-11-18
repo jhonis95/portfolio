@@ -5,7 +5,22 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    colors:{
+      main:'#278DA5',
+      default:'#FFFFFF',
+      dark:'#000000',
+      main_l1:'#45A2B8',
+      main_l2:'#70BED0',
+      main_d1:'#067E9A',
+      main_d2:'#035F74'
+    },
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'audiowide':['Audiowide', 'sans-serif'],
+        'montserrat':['Montserrat Subrayada', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
