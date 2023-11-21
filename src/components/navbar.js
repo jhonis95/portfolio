@@ -4,7 +4,7 @@ import * as React from "react"
 
 function Navbar(){
     return(
-        <section className=" bg-main pt-1 pb-1">
+        <section className=" bg-main shadow-lg z-20 fixed pt-1 pb-1 w-full">
             <div className="flex flex-row justify-around m-auto">
                 <div className=" flex flex-row items-center gap-2">
                     <StaticImage
@@ -20,7 +20,7 @@ function Navbar(){
                     <Link className=" font-montserrat text-3xl text-default no-underline" to="/projetos">PROJETOS</Link>
                     <Link className=" font-montserrat text-3xl text-default no-underline" to="/contact">CONTATO</Link>
                 </nav>
-                <div className=" flex flex-row gap-1 items-center">
+                <div className=" flex flex-row gap-2 items-center">
                     <StaticImage
                         src="../images/x.svg"
                         alt="x-icon"
@@ -34,7 +34,7 @@ function Navbar(){
                     <StaticImage
                         src="../images/github.svg"
                         alt="github-icon"
-                        className=" rounded-md w-9 h-9 "
+                        className=" rounded-md w-9 h-9"
                     />
                 </div>
             </div>

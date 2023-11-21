@@ -18,7 +18,10 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'audiowide':['Audiowide', 'sans-serif'],
-        'montserrat':['Montserrat Subrayada', 'sans-serif']
+        'montserrat':['Montserrat Subrayada', 'sans-serif'],
+        'merienda':['Merienda','cursive'],
+        'play':['Play','sans-serif'],
+        'Changa':['Changa One','sans-serif']
       },
     },
   },

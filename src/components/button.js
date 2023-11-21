@@ -1,9 +1,9 @@
 import * as React from "react"
 
-function Button({childen,style,action}){
+function Button({children,style,action}){
     return(
         <button className={style} onClick={()=>{action()}}>
-            {childen}
+            {children}
         </button>
     )
 }
