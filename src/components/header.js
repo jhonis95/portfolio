@@ -1,9 +1,9 @@
 import * as React from "react"
-import { navigate, graphql } from "gatsby"
+import { navigate, graphql,useStaticQuery } from "gatsby"
 import Button from "../components/button"
 import { StaticImage } from "gatsby-plugin-image"
 
-const toolIcons = graphql`
+const toolIcons = useStaticQuery(graphql`
   query tools_icons {
   allFile(filter: {extension: {in: "svg"}}) {
       nodes {
@@ -11,8 +11,8 @@ const toolIcons = graphql`
       }
     }
   }
-`
-console.log(toolIcons.allFile.nodes)
+`)
+console.log(toolIcons)
 
 const Header = ({ siteTitle }) => (
   <header className=" h-screen bg-gradient-to-b from-main pt-10 ">
