@@ -48,23 +48,25 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: `gatsby-source-wordpress`,
-    //   options: {
-    //       url:`http://localhost:3001/graphql`,
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+          typeName: `WPGraphQL`,
+          fieldName: `wpgraphql`,
+          url:`http://localhost:3001/graphql`,
           // Specify the URL of the WordPress source
-          // baseUrl: `http://localhost:3001/`,
-          // protocol: `http`,
-          // // Indicates if a site is hosted on WordPress.com
-          // hostingWPCOM: false,
-          // // Specify which URL structures to fetch
+          baseUrl: `http://localhost:3001/`,
+          protocol: `http`,
+          // Indicates if a site is hosted on WordPress.com
+          hostingWPCOM: false,
+          // Specify which URL structures to fetch
           // includedRoutes: [
           //   '**/posts',
           //   '**/tags',
           //   '**/categories'
           // ]
-      // }
-    // },
+      }
+    },
   ],
 }
 /*
