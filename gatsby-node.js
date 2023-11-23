@@ -7,7 +7,7 @@
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
-exports.createPages = async ({ actions,graphql }) => {
+exports.createPages = async ({ actions }) => {
   const { createPage } = actions
   createPage({
     path: "/using-dsg",
@@ -15,10 +15,10 @@ exports.createPages = async ({ actions,graphql }) => {
     context: {},
     defer: true,
   })
-  createPage({
-    path:'/',
-    component:require.resolve('./src/templates/portfolio.js'),
-    context: {},
-    defer: true,
-  })
+  // createPage({
+  //   path:'/',
+  //   component:require.resolve('./src/templates/portfolio.js'),
+  //   context: {},
+  //   defer: true,
+  // })
 }

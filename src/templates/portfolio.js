@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import Header from "../components/header"
 
 
-const IndexPage = () => (
+const Portfolio = () => (
   <Layout>
     <Header/>
   </Layout>
@@ -20,4 +20,4 @@ const IndexPage = () => (
  */
 export const Head = () => <Seo title="Home" />
 
-export default IndexPage
+export default Portfolio
