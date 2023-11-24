@@ -21,7 +21,7 @@ module.exports = {
         'montserrat':['Montserrat Subrayada', 'sans-serif'],
         'merienda':['Merienda','cursive'],
         'play':['Play','sans-serif'],
-        'Changa':['Changa One','sans-serif']
+        'changa':['Changa One','sans-serif']
       },
     },
   },
