@@ -31,17 +31,27 @@ console.log(toolIcons)
             <h3 className=" font-merienda text-4xl text-main_l1">Desenvolvedor Web</h3>
             <p className=" font-play text-2xl ">Focado em desenvolvimento de sites e sistemas web que geram valor.</p>
             <div>
-              <h2  className=" font-Changa text-5xl">Habilidades</h2>
+              <h2  className=" font-changa text-5xl">Habilidades</h2>
               <div>
                 {
-                
+                  
                 }
               </div>
             </div>
         </div>
-        <div>
-            <Button action={()=>{navigate('/cv')}}>meu CV</Button>
-            <Button action={()=>{navigate('/about')}}>Sobre</Button>
+        <div className=" flex flex-col gap-28 h-screen justify-center">
+            <Button 
+              style=' w-[267px] h-[92px] rounded border-solid border-4 border-dark font-changa text-4xl text-default bg-main_l1' 
+              action={()=>{navigate('/cv')}}
+            >
+              meu CV
+            </Button>
+            <Button 
+              style=' w-[267px] h-[92px] rounded border-solid border-4 border-dark font-changa text-4xl text-main bg-default' 
+              action={()=>{navigate('/about')}}
+            >
+              Sobre
+            </Button>
         </div>
       </div>
     </header>
